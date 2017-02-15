@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yellowroad admin</title>
+		<meta charset="utf8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="titleRow">
+			<img class="titleImg" src="images/yellowroad-logo-yellow.png">
+			<button class="inputClear" onclick="resultRandom()">
+				<span class="glyphicon glyphicon-retweet retweet"></span>
+			</button>
+		</div>
+		<div class="clearDiv" style="clear: both;"></div>
+		<br>
+		<div class="tableContainer">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Vezetéknév
+							<button id="sortByLastName">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Keresztnév
+							<button id="sortByFirstName">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Email cím 
+							<button id="sortByEmail">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Mobilszám
+							<button id="sortByPhone">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Iskolai végzettség
+							<button id="sortByEducation">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Angol nyelvtudás
+							<button id="sortByEnglishLevel">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Életkor 
+							<button id="sortByAge">
+								<span class="glyphicon glyphicon-triangle-bottom"></span>
+							</button>
+						</th>
+						<th>Hírlevél 
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<input id="findLastName" class="form-control" type="text" placeholder="Vezetéknév">
+						</td>
+						<td>
+							<input id="findFirstName" class="form-control" type="text" placeholder="Keresztnév">
+						</td>
+						<td>
+							<input id="findEmail" class="form-control" type="text" placeholder="Email cím">
+						</td>
+						<td>
+							<input id="findPhone" class="form-control" type="text" placeholder="Mobilszám">
+						</td>
+						<td>
+							<input id="findEducation" class="form-control" type="text" placeholder="Végzettség">
+						</td>
+						<td>
+							<input id="findEnglishLevel" class="form-control" type="text" placeholder="Angol nyelvtudás">
+						</td>
+						<td>
+							<input id="findAge" type="text" class="form-control" placeholder="Életkor">
+						</td>
+						<td>
+							<button id="findNewsLetter" class="glyphicon glyphicon-ok form-control checkBtn" onclick="showCheck()"></button>
+						</td>
+					</tr>
+				</thead>
+				<tbody class="resultTableRows">
+				</tbody>
+			</table>
+		</div>
+		<script src="javascript/jquery-3.1.1.min.js"></script>
+		<script src="javascript/script_admin.js"></script>
+		<script src="javascript/sequence.js"></script>
+		<script src="javascript/search.js"></script>
+	</body>
+</html>

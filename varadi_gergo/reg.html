@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yellowroad regisztráció</title>
+		<meta charset="utf8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="titleRow">
+			<img class="titleImg" src="images/yellowroad-logo-yellow.png">
+			<button class="inputClear" onclick="clearInput()">
+				<span class="glyphicon glyphicon-trash trash"></span>
+			</button>
+		</div>
+		<div class="clearDiv" style="clear: both;"></div>
+		<br>
+			<form class="form-inline">
+				<div class="form-group">
+					<label for="lastNameId"> Vezetéknév:*</label>
+						<input id="lastNameId" class="lastName form-control" type="text" placeholder="Vezetéknév" required>
+					<br>
+					<label for="firstNameId">Keresztnév:*</label>
+						<input id="firstNameId" class="firstName form-control" type="text" placeholder="Keresztnév" required>
+					<br>
+					<label for="emailAddressId">Email cím:*</label>
+						<input id="emailAddressId" class="emailAddress form-control" type="text" placeholder="Fiók" required>
+						@
+						<input class="emailDomain form-control" type="text" placeholder="Domain" required>
+					<br>
+					<label for="phoneId">Mobilszám:</label>
+						<input id="phoneId" class="phone form-control" type="text" placeholder="+36...">
+					<br>
+					<label for="educationId">Iskolai végzettség:*</label>
+						<select id="educationId" class="education form-control" required>
+							<option selected disabled>Válassz</option>
+							<option value="a">Főiskola/Egyetem</option>
+							<option value="b">Érettségi</option>
+							<option value="c">Egyéb</option>
+						</select>
+					<br>
+					<label for="englishLevelId">Angol nyelvtudás:*</label>
+						<select id="englishLevelId" class="englishLevel form-control" required>
+							<option selected disabled>Válassz</option>
+							<option value="a">Alapfok</option>
+							<option value="b">Középfok</option>
+							<option value="c">Felsőfok</option>
+						</select>
+					<br>
+					<label for="ageId">Életkor:*</label>
+						<select id="ageId" class="age form-control" required>
+							<option selected disabled>Válassz</option>
+							<option value="a">18-25 év</option>
+							<option value="b">26-35 év</option>
+							<option value="c">35 év felett</option>
+						</select>
+					<br>
+					<label for="newsLetterId">Hírlevél feliratkozás:</label>
+						<input id="newsLetterId" class="newsLetter" type="checkbox" checked value="on">
+					<br>
+					<input id="submitBtn" class="btn btn-primary" type="submit" value="Regisztrálok" onclick="sendToServer()">
+				</div>
+			</form>
+		<script src="javascript/jquery-3.1.1.min.js"></script>
+		<script src="javascript/script_reg.js"></script>
+	</body>
+</html>
