@@ -1,0 +1,3 @@
+j�n. 19, 2017 3:26:30 DU helloWorld.TestClass main
+INFO: 
+This is a logged information message.
